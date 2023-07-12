@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Karla Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ac4dc93457.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="heading">
+            <h1 class="title">Generate a <span class="title-span">random password</span></h1>
+            <p class="subtitle">Never use an insecure password again.</p>
+            <button class="btn" id="pass-btn" onclick="generatePasswords()">Generate passwords</button>
+        </div>
+        
+        <hr class="break-line">
+
+        <div class="password-containers">
+            <div class="container container1">
+                <p onclick="copy1()" class="password" id="pass1-container"></p>
+            </div>
+            
+            
+    
+            <div class="container container2">
+                <p onclick="copy2()" class="password" id="pass2-container"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
